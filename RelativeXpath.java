@@ -4,16 +4,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class CSSSelector {
+public class RelativeXpath {
 
 	public static void main(String[] args) {
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://www.facebook.com/");
 		
-		driver.findElement(By.cssSelector("Input#email")).sendKeys("Cristiano Ronaldo");
-		driver.findElement(By.cssSelector("Input#pass")).sendKeys("ronaldo@7777");
-		driver.findElement(By.name("login")).click();
+		driver.findElement(By.xpath("//button[@name='login']")).click(); 
 	}
+
 }
-
-

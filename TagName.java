@@ -16,8 +16,8 @@ public class TagName {
 		WebElement name1=driver.findElement(By.name("pass"));
 		name1.sendKeys("ronaldo@777");
 		
-		WebElement name2=driver.findElement(By.tagName("Button"));
-		name2.click();
+		driver.findElement(By.tagName("Button"));
+	
 	}
 
 }
